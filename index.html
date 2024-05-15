@@ -8,7 +8,7 @@
     <h1>Olá, mundo!</h1>
     <p>resultado aqui</p>
     <p> aprendendo a usar o <strong>DOM</strong> em JS</p>
-    <div id="area" onclick="clicar()" onmosaenter="entrar()" onmouseout="sair()">Clique Aqui</div>
+    <div id="area" onclick="clicar()" onclickenter="entrar()" onclickout="sair()">Clique Aqui</div>
  <script>
      var a = document.getElementById('area')
      function clicar(){
@@ -18,7 +18,7 @@
      var b = document.getElementById('area')
      function entrar(){
             a.innerText = 'Entrou!';
-            a.style.backgroundColor = 'green';
+            a.style.backgroundColor = 'red';
         }
      var c = document.ElementById('area')
      function sair(){
