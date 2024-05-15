@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport"content="width=device-width, incial-scale=1.0">
+    </head>
+<body>
+    <h1>Olá, mundo!</h1>
+    <p>resultado aqui</p>
+    <p> aprendendo a usar o <strong>DOM</strong> em JS</p>
+    <div id="area" onclick="clicar()" onmosaenter="entrar()" onmouseout="sair()">Clique Aqui</div>
+ <script>
+     var a = document.getElementById('area')
+     function clicar(){
+         a.innerText = 'clicou!';
+        }
+
+     var b = document.getElementById('area')
+     function entrar(){
+            a.innerText = 'Entrou!';
+            a.style.backgroundColor = 'green';
+        }
+     var c = document.ElementById('area')
+     function sair(){
+            a.innerText = 'Saiu!';
+            a.style.backgroundColor = '#ccc';
+        }
+     
+ </script>
+</body>
+</html>
